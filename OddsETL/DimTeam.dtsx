@@ -1,0 +1,3698 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/10/2024 7:00:27 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-O44TRAL"
+  DTS:CreatorName="DESKTOP-O44TRAL\sebas"
+  DTS:DTSID="{51F3B92C-7797-40C0-9A1A-142F38812056}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{CF144AB8-2446-411B-AE48-5A9AE7DF44D9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LoadTeams]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CC875F26-8533-475F-9ED7-AF1562D67DAD}"
+      DTS:ObjectName="LoadTeams">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\sebas\OneDrive\Dokumenty\IiAD\hurtownie\projekt\odds1.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Unnamed  0"
+              DTS:DTSID="{316B242A-6795-471C-A05C-DE1141228349}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Div"
+              DTS:DTSID="{C07C05C5-57D7-4F6A-B3DD-456459E69F57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{E9F88550-7113-425B-88C2-19A87746ED1F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Time"
+              DTS:DTSID="{E2199558-B37A-4CDD-8797-6A9C24CEE9B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HomeTeam"
+              DTS:DTSID="{3E0D1EAF-9CB1-4249-8484-664C163CEBFB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AwayTeam"
+              DTS:DTSID="{BE0CDFB6-14BC-4220-8A19-FBE950EC226F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FTHG"
+              DTS:DTSID="{3968B661-E1AB-4ED4-81D5-2646E43FBFA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FTAG"
+              DTS:DTSID="{A8B4D004-1F0E-41C5-85C9-3F14EED02391}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FTR"
+              DTS:DTSID="{5BFE2ED0-760E-42C5-B9D2-363C9DFB8CD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HTHG"
+              DTS:DTSID="{A6978DE6-4E7A-43FF-A9AE-3B2E8415A098}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HTAG"
+              DTS:DTSID="{9D177ADD-84A6-4FA2-88B7-7C6B3796C05F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HTR"
+              DTS:DTSID="{EB6BFAD4-C14E-49BF-A24D-BB52ACFB3DA7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HS"
+              DTS:DTSID="{A7134E5D-6D32-4B6F-AE47-9EE9AE699E25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AS"
+              DTS:DTSID="{85B41054-CE6A-4C06-B1A7-FF60E9C78B9B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HST"
+              DTS:DTSID="{9FBC566B-49A3-469A-B9F8-A26EA945D467}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AST"
+              DTS:DTSID="{4746569E-6DDC-4341-A5D4-18C323CDABBA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HF"
+              DTS:DTSID="{34661D75-92F6-47BE-B15B-B95675708D96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AF"
+              DTS:DTSID="{AAD0A86B-4B6A-4468-A87D-CEF6423A607E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HC"
+              DTS:DTSID="{4389B3E7-C711-4022-8C91-761A8B968523}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AC"
+              DTS:DTSID="{1E4AFC8E-ABA8-4023-94C0-9A6739EF6AA4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HY"
+              DTS:DTSID="{ABBCF258-8407-4CDA-9AC0-22E852F4A5D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AY"
+              DTS:DTSID="{66941B8C-F27A-4018-83DD-CA9F447E12D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HR"
+              DTS:DTSID="{3CC68E9A-0960-4989-9108-4B9FC3DB49F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AR"
+              DTS:DTSID="{4DCBB73F-875C-4195-9C88-D654281C7F02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365H"
+              DTS:DTSID="{DC6ABBBD-8344-436E-B21F-6713E953CB7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365D"
+              DTS:DTSID="{F6366050-15F6-4C1D-918F-DBCA66603724}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365A"
+              DTS:DTSID="{2FD836CE-55CD-42B6-BC28-38F8A4CAEB9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BWH"
+              DTS:DTSID="{9DF3D086-3377-4000-B749-6A6B4DF7FD7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BWD"
+              DTS:DTSID="{EAF5260B-DFA7-4D34-AEEF-C114F44A7929}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BWA"
+              DTS:DTSID="{C2A304DD-9BD2-4F6A-BF18-CD7EF498307E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IWH"
+              DTS:DTSID="{65269B46-1511-4207-97AF-8B9EC78C428C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IWD"
+              DTS:DTSID="{1E1B1F87-009E-42A9-82B5-0FA8FC9F7E30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IWA"
+              DTS:DTSID="{D6BD75CE-47C3-4BC0-B69F-8E3EF645481E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSH"
+              DTS:DTSID="{EDF22C7F-E03E-4E0F-872F-1A4EC88AC7F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSD"
+              DTS:DTSID="{8E4C9D8E-EC59-4D8D-8007-AE41B5591678}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSA"
+              DTS:DTSID="{44018372-E55E-438A-8424-AA3DE5509BAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHH"
+              DTS:DTSID="{0BEF6291-7BDC-4441-9C87-3196ABBD366D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHD"
+              DTS:DTSID="{16AD5537-5165-42F4-B60E-9E478A4C6973}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHA"
+              DTS:DTSID="{156B8AF2-6C36-416F-B1EA-BD9A286CC1AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VCH"
+              DTS:DTSID="{F854B85A-88BF-46C8-A464-7FF0D56E0F1F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VCD"
+              DTS:DTSID="{5C616E94-89C4-401A-8F8F-321BCB63281E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VCA"
+              DTS:DTSID="{38782994-F119-4048-9BBC-78BE758D914B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxH"
+              DTS:DTSID="{6E03284A-D069-40F0-8172-89A3E1BBF2DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxD"
+              DTS:DTSID="{58681DF2-0CC3-44D7-B8DF-C97DA639B770}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxA"
+              DTS:DTSID="{B4603C17-6A13-4FB0-A94A-84E66B623D40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgH"
+              DTS:DTSID="{72F598EC-674F-488C-BD61-CAF07A57A194}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgD"
+              DTS:DTSID="{95FC1D28-72B5-4DED-82B4-9A06D7C2F9FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgA"
+              DTS:DTSID="{9806F09E-0302-4F54-BBD2-C6D92D182D44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365&gt;2 5"
+              DTS:DTSID="{9ECE15FA-FED4-4457-A4B0-E7EAFF3B2703}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365&lt;2 5"
+              DTS:DTSID="{A767E738-88FA-4771-8090-0EBFD1A99DEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="P&gt;2 5"
+              DTS:DTSID="{14047333-F2A6-4963-BAC3-3363FE4CF86A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="P&lt;2 5"
+              DTS:DTSID="{3EEEBDB3-E5B6-4CCD-85BD-5BB4755069AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Max&gt;2 5"
+              DTS:DTSID="{E84AF3D1-CC54-440F-AB7A-994E21BF4BF4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Max&lt;2 5"
+              DTS:DTSID="{2F368936-6D14-46D1-AB20-F8555B19E414}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Avg&gt;2 5"
+              DTS:DTSID="{5B81C4A3-6432-47F4-B7BA-01E233DFDF24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Avg&lt;2 5"
+              DTS:DTSID="{1ADCF80D-00E3-4078-B374-9AD0FEB6A51B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AHh"
+              DTS:DTSID="{EEFCC5E6-5E39-4F78-97F9-9347D069EED0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365AHH"
+              DTS:DTSID="{CA80A327-D34E-4822-B766-AFA8064FBFAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365AHA"
+              DTS:DTSID="{47B94B3E-71A6-4B7D-92C5-01FF521AA5AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PAHH"
+              DTS:DTSID="{D945544C-76FC-46E0-B75C-01BABBB55867}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PAHA"
+              DTS:DTSID="{6919FF82-C089-4D80-A3A2-B4319F22A32A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxAHH"
+              DTS:DTSID="{CCB5E1D2-E27C-457D-93C8-C812BC24FD36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxAHA"
+              DTS:DTSID="{C60D7372-E627-4B59-8DF2-56CCBED9E39D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgAHH"
+              DTS:DTSID="{63E7CF24-9921-4A5F-8E61-EFDF263BFE69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgAHA"
+              DTS:DTSID="{55088F5A-8FC9-44B9-AC6E-9E3454397909}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365CH"
+              DTS:DTSID="{8C37C5C8-7029-4663-B595-D9ADCEC45496}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365CD"
+              DTS:DTSID="{10200178-C135-4078-961D-483E481393CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365CA"
+              DTS:DTSID="{27DE0165-A90D-4304-9BFA-B13185C21966}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BWCH"
+              DTS:DTSID="{E09F269B-8E8B-4E22-AFD3-C6FC0E627967}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BWCD"
+              DTS:DTSID="{48173A53-EE68-4BD2-853C-6405C9FDD432}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BWCA"
+              DTS:DTSID="{CDBF5A7E-9594-4F88-99CD-AEC365787830}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IWCH"
+              DTS:DTSID="{BA73EE91-199F-4EE8-86FB-64D9F0DE0AAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IWCD"
+              DTS:DTSID="{C022FD2E-9B4E-4C0D-8993-7FDFCCF5D6EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IWCA"
+              DTS:DTSID="{4E9EAE5A-6040-4493-A018-493365F927F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSCH"
+              DTS:DTSID="{043AB62E-3105-4700-90B9-5B7460655EE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSCD"
+              DTS:DTSID="{0BB355E4-E235-464E-9677-2CC71009BB57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PSCA"
+              DTS:DTSID="{0D01F4D7-7615-48BA-B098-8EB7CE1C0BC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHCH"
+              DTS:DTSID="{272A675A-B982-4DB3-A0E1-03D7C34CBD49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHCD"
+              DTS:DTSID="{579F03F0-4EFC-4807-85BB-095581713EDB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHCA"
+              DTS:DTSID="{EF167A9B-2459-48CD-A81E-A4CAD3FCEA05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VCCH"
+              DTS:DTSID="{485BD2E6-7451-4A97-B9FF-929F79A472B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VCCD"
+              DTS:DTSID="{2719D481-CBC5-4363-A4C6-B787700F3A6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VCCA"
+              DTS:DTSID="{D57C5988-7B17-42FD-82E1-786EBDE23F0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxCH"
+              DTS:DTSID="{B9DFC8D4-1F3E-4C65-B0DE-C8E85FC27C1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxCD"
+              DTS:DTSID="{9A176629-94A0-4A65-B60C-B5F28B46519D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxCA"
+              DTS:DTSID="{5F3417BC-9150-42E9-87EF-B8613C81F750}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgCH"
+              DTS:DTSID="{0E3FDD8C-96A1-4FEA-8EDE-E00D568606C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgCD"
+              DTS:DTSID="{0642ACD4-BDAF-46A8-AEBC-659AC764A956}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgCA"
+              DTS:DTSID="{86C07443-DA2C-423A-A67C-458FDA8791BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365C&gt;2 5"
+              DTS:DTSID="{6D2ECF6B-678E-43BD-A119-8CF2A34E59CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365C&lt;2 5"
+              DTS:DTSID="{3D5AAC77-0910-48A0-BC6A-47D8C8F58100}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PC&gt;2 5"
+              DTS:DTSID="{10204DE8-5966-4F78-9E6E-0803E4A06200}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PC&lt;2 5"
+              DTS:DTSID="{B7A59DF2-BA5A-412F-93B0-C378125DD0F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxC&gt;2 5"
+              DTS:DTSID="{942CAB45-526F-4134-9004-06FA2D2E22F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxC&lt;2 5"
+              DTS:DTSID="{E4F36AA6-61E0-485E-8FB6-A0FDC6A19348}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgC&gt;2 5"
+              DTS:DTSID="{3DBEDBF9-3014-4EBE-81F6-924F5F91E327}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgC&lt;2 5"
+              DTS:DTSID="{1200C27E-257B-4A3B-ADD7-24FEEE4575AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AHCh"
+              DTS:DTSID="{E04083B1-5535-4AAE-A606-EF42B856F69D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365CAHH"
+              DTS:DTSID="{DC3BEE85-3365-4E65-B66A-97503D86E031}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="B365CAHA"
+              DTS:DTSID="{D51D28F7-36F8-4E4A-87F3-A269B92EBCE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PCAHH"
+              DTS:DTSID="{70FB3160-832B-48E1-A305-CC06D7CE757C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PCAHA"
+              DTS:DTSID="{2CCFCEC1-3048-4F69-9C95-8019E8376336}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxCAHH"
+              DTS:DTSID="{5E81C584-DD94-4300-9AB0-6047A2C97496}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaxCAHA"
+              DTS:DTSID="{B4030A51-AB12-4B42-869D-7E75F8AA92EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgCAHH"
+              DTS:DTSID="{E976C7AC-B18F-43A6-96E6-B6E2C5BCDEE7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AvgCAHA"
+              DTS:DTSID="{F6F242E4-02FE-47FA-B59B-1D572EED26FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Referee"
+              DTS:DTSID="{52780522-7188-4DD4-AEDA-32990FFDDA3D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Odds_poject]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0253351D-D012-4D2F-8086-9E4A9F925501}"
+      DTS:ObjectName="localhost.Odds_poject">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Odds_poject;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{0253351D-D012-4D2F-8086-9E4A9F925501}localhost.Odds_poject;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0AFB66C6-7333-4B73-98D5-1AC31F2E51AF}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[HomeTeam]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HomeTeam"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[TeamName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[TeamName]"
+                      name="TeamName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Load teams"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Load teams"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Load teams.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LoadTeams]"
+                  connectionManagerRefId="Package.ConnectionManagers[LoadTeams]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HomeTeam]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]"
+                      name="HomeTeam"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Unnamed  0]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Unnamed  0" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Div]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Div" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Time]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Time" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HomeTeam]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HomeTeam" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AwayTeam]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AwayTeam" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[FTHG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="FTHG" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[FTAG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="FTAG" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[FTR]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="FTR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HTHG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HTHG" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HTAG]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HTAG" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HTR]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HTR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AS" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HST]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HST" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AST]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AST" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HF]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HF" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AF]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AF" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HC]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AC]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HY]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HY" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AY]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AY" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[HR]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="HR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AR]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AR" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365H]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365H" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365D]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365D" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365A]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365A" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[BWH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BWH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[BWD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BWD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[BWA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BWA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[IWH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IWH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[IWD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IWD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[IWA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IWA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PSH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PSH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PSD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PSD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PSA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PSA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[WHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[WHD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WHD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[WHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[VCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="VCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[VCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="VCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[VCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="VCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[P&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="P&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[P&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="P&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Max&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Max&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Max&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Max&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Avg&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Avg&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Avg&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Avg&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AHh]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AHh" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365AHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365AHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365AHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365AHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365CH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365CH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365CD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365CD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365CA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365CA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[BWCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BWCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[BWCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BWCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[BWCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="BWCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[IWCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IWCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[IWCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IWCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[IWCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="IWCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PSCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PSCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PSCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PSCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PSCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PSCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[WHCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WHCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[WHCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WHCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[WHCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="WHCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[VCCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="VCCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[VCCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="VCCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[VCCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="VCCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgCH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgCH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgCD]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgCD" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgCA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgCA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365C&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365C&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365C&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365C&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PC&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PC&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PC&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PC&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxC&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxC&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxC&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxC&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgC&gt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgC&gt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgC&lt;2 5]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgC&lt;2 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AHCh]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AHCh" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365CAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365CAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[B365CAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="B365CAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PCAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PCAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[PCAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PCAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxCAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxCAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[MaxCAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="MaxCAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgCAHH]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgCAHH" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[AvgCAHA]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AvgCAHA" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].ExternalColumns[Referee]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Referee" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Lookup 1"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 1"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimTeam]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTeam]) [refTable]
+where [refTable].[TeamName] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TeamID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TeamName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[TeamName]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Lookup 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Odds_poject]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Odds_poject]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[TeamName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TeamName"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[TeamName]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">TeamName</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[TeamID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[TeamID]"
+                      name="TeamID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">TeamID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE DimTeam
+SET TeamName = ?
+WHERE TeamID = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Odds_poject]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Odds_poject]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[TeamName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TeamName"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[TeamName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[TeamID]"
+                      cachedDataType="i4"
+                      cachedName="TeamID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[TeamID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DimTeam]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.Odds_poject]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.Odds_poject]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TeamName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TeamName"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TeamName]"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[TeamName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TeamID]"
+                      dataType="i4"
+                      name="TeamID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TeamName]"
+                      dataType="wstr"
+                      length="50"
+                      name="TeamName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_19754cfb878644a687888976e782b48b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_19754cfb878644a687888976e782b48b")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        switch (Row.HomeTeam)
+        {
+            case "Milan":
+                Row.HomeTeam = "AC Milan";
+                break;
+            case "Bielefeld":
+                Row.HomeTeam = "Arminia Bielefeld";
+                break;
+            case "Ath Bilbao":
+                Row.HomeTeam = "Athletic Club";
+                break;
+            case "Ath Madrid":
+                Row.HomeTeam = "Atletico Madrid";
+                break;
+            case "Leverkusen":
+                Row.HomeTeam = "Bayer Leverkusen";
+                break;
+            case "Dortmund":
+                Row.HomeTeam = "Borussia Dortmund";
+                break;
+            case "M'gladbach":
+                Row.HomeTeam = "Borussia M.Gladbach";
+                break;
+            case "Celta":
+                Row.HomeTeam = "Celta Vigo";
+                break;
+            case "Clermont":
+                Row.HomeTeam = "Clermont Foot";
+                break;
+            case "Ein Frankfurt":
+                Row.HomeTeam = "Eintracht Frankfurt";
+                break;
+            case "Espanol":
+                Row.HomeTeam = "Espanyol";
+                break;
+            case "FC Koln":
+                Row.HomeTeam = "FC Cologne";
+                break;
+            case "Heidenheim":
+                Row.HomeTeam = "FC Heidenheim";
+                break;
+            case "Fortuna Dusseldorf":
+                Row.HomeTeam = "Fortuna Duesseldorf";
+                break;
+            case "Greuther Furth":
+                Row.HomeTeam = "Greuther Fuerth";
+                break;
+            case "Hertha":
+                Row.HomeTeam = "Hertha Berlin";
+                break;
+            case "Huesca":
+                Row.HomeTeam = "SD Huesca";
+                break;
+            case "Mainz":
+                Row.HomeTeam = "Mainz 05";
+                break;
+            case "Man City":
+                Row.HomeTeam = "Manchester City";
+                break;
+            case "Man United":
+                Row.HomeTeam = "Manchester United";
+                break;
+            case "Newcastle":
+                Row.HomeTeam = "Newcastle United";
+                break;
+            case "Nott'm Forest":
+                Row.HomeTeam = "Nottingham Forest";
+                break;
+            case "Paris SG":
+                Row.HomeTeam = "Paris Saint Germain";
+                break;
+            case "Parma":
+                Row.HomeTeam = "Parma Calcio 1913";
+                break;
+            case "RB Leipzig":
+                Row.HomeTeam = "RasenBallsport Leipzig";
+                break;
+            case "Vallecano":
+                Row.HomeTeam = "Rayo Vallecano";
+                break;
+            case "Betis":
+                Row.HomeTeam = "Real Betis";
+                break;
+            case "Sociedad":
+                Row.HomeTeam = "Real Sociedad";
+                break;
+            case "Valladolid":
+                Row.HomeTeam = "Real Valladolid";
+                break;
+            case "Spal":
+                Row.HomeTeam = "SPAL 2013";
+                break;
+            case "St Etienne":
+                Row.HomeTeam = "Saint-Etienne";
+                break;
+            case "Stuttgart":
+                Row.HomeTeam = "VfB Stuttgart";
+                break;
+            case "West Brom":
+                Row.HomeTeam = "West Bromwich Albion";
+                break;
+            case "Wolves":
+                Row.HomeTeam = "Wolverhampton Wanderers";
+                break;
+            
+            default:
+                break;
+        }
+    }
+
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String HomeTeam
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool HomeTeam_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_19754cfb878644a687888976e782b48b</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_19754cfb878644a687888976e782b48b</msb:DisplayName>
+    <msb:ProjectId>{C4CB3531-7FC7-4FEC-994A-C0FBD18C9C5C}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_19754cfb878644a687888976e782b48b.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_19754cfb878644a687888976e782b48b.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74fad8dc-bb61-419c-8635-5b57e38bdfc9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_19754cfb878644a687888976e782b48b</RootNamespace>
+    <AssemblyName>SC_19754cfb878644a687888976e782b48b</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_19754cfb878644a687888976e782b48b" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_19754cfb878644a687888976e782b48b.Properties.Settings.get_Default():SC_19754cfb878644a687888976e782b48b.Properties.Sett" +
+    "ings")]
+
+namespace SC_19754cfb878644a687888976e782b48b.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_19754cfb878644a687888976e782b48b.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_19754cfb878644a687888976e782b48b.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_19754cfb878644a687888976e782b48b.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_19754cfb878644a687888976e782b48b.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_19754cfb878644a687888976e782b48b.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_19754cfb878644a687888976e782b48b.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAHM/Z2YAAAAAAAAAAOAAIiALATAAACAAAAAIAAAAAAAABj8A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALQ+AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAADB8AAAAgAAAAIAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAiAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAKAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADo
+PgAAAAAAAEgAAAACAAUAyCcAADQWAAABAAAAAAAAAPw9AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAIA6QUAAAEAABEDbwYAAAYK
+BigZAAAGCwcgi2+FlUL7AAAAByClf34nNXQHIKRS3gk1NgcgovNkATUXByDlg9UAOwQEAAAHIKLz
+ZAE7HQIAACoHIOrXKQM73AMAAAcgpFLeCTtaAwAAKgcg3xEcFjUXByByHn0KO60CAAAHIN8RHBY7
+1gEAACoHIPDtXB47hAMAAAcgpX9+JzvhAQAAKgcgs/MUUTU2ByAbkd5ENRcHIKgQXkE7+AEAAAcg
+G5HeRDsfAwAAKgcgutl4TjvPAgAAByCz8xRRO0wDAAAqByC1+9VwNRcHID5JnV07bAIAAAcgtfvV
+cDsvAQAAKgcgOzzVezs0AQAAByAW/A6GOygCAAAHIItvhZU72AIAACoHIDPGSMo1dAcguzSoqTU2
+ByD4QIaeNRcHIAN6JJY7ggEAAAcg+ECGnju7AQAAKgcg1E1tnzs4AQAAByC7NKipO6MCAAAqByDd
+piPBNRcHIK53z7g7ogAAAAcg3aYjwTvKAAAAKgcg08CGxTuKAQAAByAzxkjKO+UBAAAqByChBc7j
+NTYHIO0Ji9c1FwcgGmYezjuWAQAAByDtCYvXO60BAAAqByB0G2LfOwcCAAAHIKEFzuM72gEAACoH
+IHK+1+g1FwcgMehj5jv6AAAAByByvtfoO94AAAAqByBHTrbsO/QAAAAHIMpXy/M7ggEAAAcg5ws7
+/zuJAAAAKgZyAQAAcCgSAAAKOjICAAAqBnINAABwKBIAAAo6LQIAACoGciEAAHAoEgAACjooAgAA
+KgZyNwAAcCgSAAAKOiMCAAAqBnJNAABwKBIAAAo6HgIAACoGcmMAAHAoEgAACjoZAgAAKgZydQAA
+cCgSAAAKOhQCAAAqBnKLAABwKBIAAAo6DwIAACoGcpcAAHAoEgAACjoKAgAAKgZyqQAAcCgSAAAK
+OgUCAAAqBnLFAABwKBIAAAo6AAIAACoGctUAAHAoEgAACjr7AQAAKgZy5QAAcCgSAAAKOvYBAAAq
+BnL7AABwKBIAAAo68QEAACoGciEBAHAoEgAACjrsAQAAKgZyPwEAcCgSAAAKOucBAAAqBnJNAQBw
+KBIAAAo64gEAACoGclsBAHAoEgAACjrdAQAAKgZyZwEAcCgSAAAKOtgBAAAqBnJ5AQBwKBIAAAo6
+0wEAACoGco8BAHAoEgAACjrOAQAAKgZyowEAcCgSAAAKOskBAAAqBnK/AQBwKBIAAAo6xAEAACoG
+ctEBAHAoEgAACjq/AQAAKgZy3QEAcCgSAAAKOroBAAAqBnLzAQBwKBIAAAo6tQEAACoGcgcCAHAo
+EgAACjqwAQAAKgZyEwIAcCgSAAAKOqsBAAAqBnIlAgBwKBIAAAo6pgEAACoGcjsCAHAoEgAACjqh
+AQAAKgZyRQIAcCgSAAAKOpwBAAAqBnJbAgBwKBIAAAo6lwEAACoGcm8CAHAoEgAACjqSAQAAKgZy
+gwIAcCgSAAAKOo0BAAAqA3KRAgBwbwcAAAYqA3KjAgBwbwcAAAYqA3LHAgBwbwcAAAYqA3LjAgBw
+bwcAAAYqA3IDAwBwbwcAAAYqA3IlAwBwbwcAAAYqA3JJAwBwbwcAAAYqA3JxAwBwbwcAAAYqA3KH
+AwBwbwcAAAYqA3KjAwBwbwcAAAYqA3LLAwBwbwcAAAYqA3LdAwBwbwcAAAYqA3LzAwBwbwcAAAYq
+A3IPBABwbwcAAAYqA3I3BABwbwcAAAYqA3JXBABwbwcAAAYqA3JzBABwbwcAAAYqA3KHBABwbwcA
+AAYqA3KZBABwbwcAAAYqA3K5BABwbwcAAAYqA3LdBABwbwcAAAYqA3L/BABwbwcAAAYqA3IjBQBw
+bwcAAAYqA3JLBQBwbwcAAAYqA3JvBQBwbwcAAAYqA3KdBQBwbwcAAAYqA3K7BQBwbwcAAAYqA3LR
+BQBwbwcAAAYqA3LtBQBwbwcAAAYqA3INBgBwbwcAAAYqA3IhBgBwbwcAAAYqA3I9BgBwbwcAAAYq
+A3JZBgBwbwcAAAYqA3KDBgBwbwcAAAYqHgIoDAAABioqAgMEBSgTAAAKKlICexQAAAoCexUAAAoW
+lG8WAAAKKiYCFgMoFwAACioiAhYoGAAACipaAywIAhYoGQAACipyswYAcHMaAAAKeh4CKBsAAAoq
+HgIoHAAACip+AigdAAAKAgJzEAAABn0BAAAEAgJzEQAABn0CAAAEKpIEclAHAHAabx4AAAosFQIF
+AgMoHwAACg4EcwUAAAZvDgAABipKKwcCA28PAAAGA28KAAAGLfEqBio6AiggAAAKAgN9AwAABCo6
+AiggAAAKAgN9BAAABCoeAiggAAAKKq5+BQAABC0ecmAHAHDQBwAAAighAAAKbyIAAApzIwAACoAF
+AAAEfgUAAAQqGn4GAAAEKh4CgAYAAAQqGn4HAAAEKh4CKCQAAAoqLnMXAAAGgAcAAAQqAAAAEzAC
+ACwAAAACAAARAiwnIMWdHIEKFgsrFAIHbyUAAAoGYSCTAQABWgoHF1gLBwJvJgAACjLjBipCU0pC
+AQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAACcBQAAI34AAAgGAACIBgAAI1N0cmluZ3MA
+AAAAkAwAANQHAAAjVVMAZBQAABAAAAAjR1VJRAAAAHQUAADAAQAAI0Jsb2IAAAAAAAAAAgAAAVcV
+ogEJAQAAAPoBMwAWAAABAAAAHwAAAAkAAAAHAAAAGQAAABAAAAAmAAAAEQAAAAIAAAADAAAABQAA
+AAgAAAABAAAABAAAAAEAAAAAACkDAQAAAAAABgADAqoEBgCXAqoEBgBPAZcEDwAeBQAABgB8AewD
+BgDmAewDBgDHAewDBgB+AuwDBgAjAuwDBgA8AuwDBgCTAewDBgCuAdICCgBXApwACgBpBJwADgBa
+BJwACgA1BJwACgDuBZwABgCxBaQDBgAyAZcEBgB6BMoEBgApBNcDEgACARMDEgBjARMDEgDqAMID
+BgAXAaoEBgDvAqQDBgD+A6QDBgAYBKQDBgC9AKQDBgBuAKQDBgBzBuwDAAAAAAEAAAAAAAEAAQAB
+ABAAtwMAABAAAQABAAEAEABNBAAAOQABAAUAAQAQANAFAABFAAEADAABABAAmwUAAEkAAwAQAAEA
+EABcBQAASQAEABEAAAAQANEELQVJAAUAEgAAARAAiwUtBWEABwAWAAABAAAKAAAASQAIABkABgCb
+BYwABgBcBZAAAQDeBZQAAQDeBZQAEQCrA5gAEQDaAJwAEQBeAKAAUCAAAAAAxgC1AgYAAQBYIAAA
+AADGAMACBgABAGAgAAAAAMYAUAakAAEAVSYAAAAAhhiKBAYAAgBdJgAAAACGGIoEJgACAGgmAAAA
+AIYIgQOqAAUAfSYAAAAAhgiOAxAABQCHJgAAAACGCFEDSAAGAJAmAAAAAIYIZQOuAAYApyYAAAAA
+hgBnBkgABwCvJgAAAACGALgFSAAHALcmAAAAAIYYigQGAAcA1yYAAAAAxgBDBrMABwD8JgAAAADG
+ATwGpAALAA8nAAAAAMYBUAakAAwAEScAAAAAhhiKBL0ADQAgJwAAAACGGIoEvQAOAC8nAAAAAIMY
+igQGAA8ANycAAAAAkwh2BMMADwBjJwAAAACTCMIAyAAPAGonAAAAAJMIzgDNAA8AcicAAAAAlgjE
+BdMAEAB5JwAAAACGGIoEBgAQAIEnAAAAAJEYkATYABAAkCcAAAAAkwD2AtwAEAAAAAEAawYAAAEA
+bwQAAAIAZgUAAAMAQwQAAAEAzAIAAAEAzAIAAAEAKQAAAAIAkgAAAAMAbwQAAAQAQwQAAAEAbwQA
+AAEAawYAAAEA9AUAAAEA9AUAAAEAzAIAAAEArwUJAIoEAQARAIoEBgAZAIoECgApAIoEEAAxAIoE
+EAA5AIoEEABBAIoEEABJAIoEEABRAIoEEABZAIoEEABhAIoEEABpAIoEBgCZAIoEBgC5AIoEFQDJ
+AIoEBgCJALUCBgCJAMACBgDRAHwGIABxAIoEJgBxAG8EMABxAGYFNAB5AOwCOABxAJsDPQBxAHID
+QwBxAHkDAQDZAIoEEABxAGcGSABxALgFSACJAIoEBgDRAJQFTACJAHoFUwCRAIoEBgDpAIAAWQDp
+AG8GYAChAIoEZQDBAIoEBgDRAKcFcQDRAAgDdgAuAAsA+AAuABMAAQEuABsAIAEuACMAKQEuACsA
+UgEuADMAUgEuADsAUgEuAEMAKQEuAEsAWAEuAFMAUgEuAFsAbwFDAGMAuQFpAHMAIAGJAHMAIAHh
+AHsAuQHjAGsAuQEjAXsAuQEbAGwAAwABAAcAAwAIAAUAAACSA+EAAABpA+UAAAB6BOkAAADiAO4A
+AADIBfMAAgAGAAMAAQAHAAMAAgAIAAUAAQAJAAUAAgATAAcAAgAUAAkAAQAVAAkAAgAWAAsABIAA
+AAEAAAAAAAAAAAAAAAAAMQAAAAQAAAAAAAAAAAAAAHoAVQAAAAAAEAAAAAAAAAAAAAAAgwD+BQAA
+AAAQAAAAAAAAAAAAAACDABsGAAAAAAQAAAAAAAAAAAAAAHoApAMAAAAAAAAAAAEAAADbBAAAAAAA
+AAA8TW9kdWxlPgA8UHJpdmF0ZUltcGxlbWVudGF0aW9uRGV0YWlscz4ASW5wdXRJRABTQ18xOTc1
+NGNmYjg3ODY0NGE2ODc4ODg5NzZlNzgyYjQ4YgBtc2NvcmxpYgBkZWZhdWx0SW5zdGFuY2UAUnVu
+dGltZVR5cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUASW5wdXROYW1lAE1pY3Jvc29mdC5TcWxT
+ZXJ2ZXIuRHRzLlBpcGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VD
+dWx0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBp
+bGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdn
+YWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJp
+YnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUA
+QXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1
+dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1
+dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9p
+bnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5
+QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVy
+c2lvbmluZwBHZXRTdHJpbmcAQ29tcHV0ZVN0cmluZ0hhc2gAZ2V0X0xlbmd0aABTeXN0ZW0uQ29t
+cG9uZW50TW9kZWwAU0NfMTk3NTRjZmI4Nzg2NDRhNjg3ODg4OTc2ZTc4MmI0OGIuZGxsAGdldF9I
+b21lVGVhbV9Jc051bGwAc2V0X0hvbWVUZWFtX0lzTnVsbABTZXROdWxsAGdldF9Ib21lVGVhbQBz
+ZXRfSG9tZVRlYW0Ac2V0X0l0ZW0AU3lzdGVtAHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lzdGVt
+LkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24ASW52
+YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1
+dE5hbWVNYXAAT3V0cHV0TWFwAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZm
+ZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5
+c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ18xOTc1NGNm
+Yjg3ODY0NGE2ODc4ODg5NzZlNzgyYjQ4Yi5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMA
+RGVidWdnaW5nTW9kZXMAU0NfMTk3NTRjZmI4Nzg2NDRhNjg3ODg4OTc2ZTc4MmI0OGIuUHJvcGVy
+dGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRp
+bmdzAEVxdWFscwBDb25uZWN0aW9ucwBnZXRfQ2hhcnMAT2JqZWN0AEVuZE9mUm93c2V0AGdldF9E
+ZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABNaWNy
+b3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0
+AElucHV0MF9Qcm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nlc3NJbnB1dFJvdwBOZXh0Um93AGdldF9B
+c3NlbWJseQBvcF9FcXVhbGl0eQAAC00AaQBsAGEAbgAAE0IAaQBlAGwAZQBmAGUAbABkAAAVQQB0
+AGgAIABCAGkAbABiAGEAbwAAFUEAdABoACAATQBhAGQAcgBpAGQAABVMAGUAdgBlAHIAawB1AHMA
+ZQBuAAARRABvAHIAdABtAHUAbgBkAAAVTQAnAGcAbABhAGQAYgBhAGMAaAABC0MAZQBsAHQAYQAA
+EUMAbABlAHIAbQBvAG4AdAAAG0UAaQBuACAARgByAGEAbgBrAGYAdQByAHQAAA9FAHMAcABhAG4A
+bwBsAAAPRgBDACAASwBvAGwAbgAAFUgAZQBpAGQAZQBuAGgAZQBpAG0AACVGAG8AcgB0AHUAbgBh
+ACAARAB1AHMAcwBlAGwAZABvAHIAZgAAHUcAcgBlAHUAdABoAGUAcgAgAEYAdQByAHQAaAAADUgA
+ZQByAHQAaABhAAANSAB1AGUAcwBjAGEAAAtNAGEAaQBuAHoAABFNAGEAbgAgAEMAaQB0AHkAABVN
+AGEAbgAgAFUAbgBpAHQAZQBkAAATTgBlAHcAYwBhAHMAdABsAGUAABtOAG8AdAB0ACcAbQAgAEYA
+bwByAGUAcwB0AAERUABhAHIAaQBzACAAUwBHAAALUABhAHIAbQBhAAAVUgBCACAATABlAGkAcAB6
+AGkAZwAAE1YAYQBsAGwAZQBjAGEAbgBvAAALQgBlAHQAaQBzAAARUwBvAGMAaQBlAGQAYQBkAAAV
+VgBhAGwAbABhAGQAbwBsAGkAZAAACVMAcABhAGwAABVTAHQAIABFAHQAaQBlAG4AbgBlAAATUwB0
+AHUAdAB0AGcAYQByAHQAABNXAGUAcwB0ACAAQgByAG8AbQAADVcAbwBsAHYAZQBzAAARQQBDACAA
+TQBpAGwAYQBuAAAjQQByAG0AaQBuAGkAYQAgAEIAaQBlAGwAZQBmAGUAbABkAAAbQQB0AGgAbABl
+AHQAaQBjACAAQwBsAHUAYgAAH0EAdABsAGUAdABpAGMAbwAgAE0AYQBkAHIAaQBkAAAhQgBhAHkA
+ZQByACAATABlAHYAZQByAGsAdQBzAGUAbgAAI0IAbwByAHUAcwBzAGkAYQAgAEQAbwByAHQAbQB1
+AG4AZAAAJ0IAbwByAHUAcwBzAGkAYQAgAE0ALgBHAGwAYQBkAGIAYQBjAGgAABVDAGUAbAB0AGEA
+IABWAGkAZwBvAAAbQwBsAGUAcgBtAG8AbgB0ACAARgBvAG8AdAAAJ0UAaQBuAHQAcgBhAGMAaAB0
+ACAARgByAGEAbgBrAGYAdQByAHQAABFFAHMAcABhAG4AeQBvAGwAABVGAEMAIABDAG8AbABvAGcA
+bgBlAAAbRgBDACAASABlAGkAZABlAG4AaABlAGkAbQAAJ0YAbwByAHQAdQBuAGEAIABEAHUAZQBz
+AHMAZQBsAGQAbwByAGYAAB9HAHIAZQB1AHQAaABlAHIAIABGAHUAZQByAHQAaAAAG0gAZQByAHQA
+aABhACAAQgBlAHIAbABpAG4AABNTAEQAIABIAHUAZQBzAGMAYQAAEU0AYQBpAG4AegAgADAANQAA
+H00AYQBuAGMAaABlAHMAdABlAHIAIABDAGkAdAB5AAAjTQBhAG4AYwBoAGUAcwB0AGUAcgAgAFUA
+bgBpAHQAZQBkAAAhTgBlAHcAYwBhAHMAdABsAGUAIABVAG4AaQB0AGUAZAAAI04AbwB0AHQAaQBu
+AGcAaABhAG0AIABGAG8AcgBlAHMAdAAAJ1AAYQByAGkAcwAgAFMAYQBpAG4AdAAgAEcAZQByAG0A
+YQBpAG4AACNQAGEAcgBtAGEAIABDAGEAbABjAGkAbwAgADEAOQAxADMAAC1SAGEAcwBlAG4AQgBh
+AGwAbABzAHAAbwByAHQAIABMAGUAaQBwAHoAaQBnAAAdUgBhAHkAbwAgAFYAYQBsAGwAZQBjAGEA
+bgBvAAAVUgBlAGEAbAAgAEIAZQB0AGkAcwAAG1IAZQBhAGwAIABTAG8AYwBpAGUAZABhAGQAAB9S
+AGUAYQBsACAAVgBhAGwAbABhAGQAbwBsAGkAZAAAE1MAUABBAEwAIAAyADAAMQAzAAAbUwBhAGkA
+bgB0AC0ARQB0AGkAZQBuAG4AZQABG1YAZgBCACAAUwB0AHUAdAB0AGcAYQByAHQAAClXAGUAcwB0
+ACAAQgByAG8AbQB3AGkAYwBoACAAQQBsAGIAaQBvAG4AAC9XAG8AbAB2AGUAcgBoAGEAbQBwAHQA
+bwBuACAAVwBhAG4AZABlAHIAZQByAHMAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkA
+IABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBp
+AGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMA
+dABlAGEAZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfADEAOQA3ADUANABjAGYAYgA4ADcAOAA2
+ADQANABhADYAOAA3ADgAOAA4ADkANwA2AGUANwA4ADIAYgA0ADgAYgAuAFAAcgBvAHAAZQByAHQA
+aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAABAs8Cy4mmsQJyH/H0cScZsAAQgAQEIAyAAAQUg
+AQEREQQgAQEOBSABARFZBAcCDgkFAAICDg4JIAMBEj0dCBJBAwYSPQMGHQgEIAEOCAUgAgEIHAQg
+AQIIAyAAAgYgAgIOEXEFIAEdCAgGAAESdRF5BCAAEn0GIAIBDhJ9BAcCCQgEIAEDCAMgAAgIt3pc
+Vhk04IkIiYRdzYCAzJEDBhIUAwYSGAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwDIAAOBCABAQIJIAQB
+CA4SPRJBBSABARJFBAAAElEEAAASVQUAAQESVQQAABIgAwAAAQQAAQkOAygADgMoAAIECAASUQQI
+ABJVBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAA
+KAEAI1NDXzE5NzU0Y2ZiODc4NjQ0YTY4Nzg4ODk3NmU3ODJiNDhiAAAFAQAAAAAWAQARQ29weXJp
+Z2h0IEAgIDIwMjQAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJhbWV3b3Jr
+RGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43BAEAAAAAALQAAADOyu++AQAAAJEAAABsU3lz
+dGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwg
+Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5S
+ZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAADcPgAAAAAA
+AAAAAAD2PgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6D4AAAAAAAAAAAAAAABfQ29yRGxsTWFp
+bgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQ
+AAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhA
+AADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv
+/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYA
+YQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAA
+ALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAAMAAwADQA
+YgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkATgBh
+AG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMA
+XwAxADkANwA1ADQAYwBmAGIAOAA3ADgANgA0ADQAYQA2ADgANwA4ADgAOAA5ADcANgBlADcAOAAy
+AGIANAA4AGIAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAA
+AABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADEAOQA3ADUANABjAGYAYgA4
+ADcAOAA2ADQANABhADYAOAA3ADgAOAA4ADkANwA2AGUANwA4ADIAYgA0ADgAYgAuAGQAbABsAAAA
+SAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBoAHQAIABA
+ACAAIAAyADAAMgA0AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAA
+AAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8AMQA5ADcANQA0
+AGMAZgBiADgANwA4ADYANAA0AGEANgA4ADcAOAA4ADgAOQA3ADYAZQA3ADgAMgBiADQAOABiAC4A
+ZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADEAOQA3ADUANABj
+AGYAYgA4ADcAOAA2ADQANABhADYAOAA3ADgAOAA4ADkANwA2AGUANwA4ADIAYgA0ADgAYgAAADQA
+CAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4AAgAAQBB
+AHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAACD8AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_19754cfb878644a687888976e782b48b</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">C8</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Script Component.Inputs[Input 0].Columns[HomeTeam]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HomeTeam"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]"
+                      usageType="readWrite" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Data Flow Task\Script Component.Inputs[Input 0]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[HomeTeam]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HomeTeam"
+                      lineageId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[TeamName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TeamName"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[TeamName]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[HomeTeam]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[HomeTeam]"
+                      name="HomeTeam">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Load teams.Outputs[Flat File Source Output].Columns[HomeTeam]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[TeamName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[TeamName]"
+                      name="TeamName"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[TeamName]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task\Script Component.Inputs[Input 0]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task\Load teams.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
+              endId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup 1.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Output 0]"
+              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+              name="Output 0"
+              startId="Package\Data Flow Task\Script Component.Outputs[Output 0]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output]"
+              endId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="235,113" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="432.5,407.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Data Flow Task\Lookup 1"
+          TopLeft="73,308" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Data Flow Task\Load teams"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task\Script Component"
+          TopLeft="279.5,58.5" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Data Flow Task\OLE DB Command"
+          TopLeft="26.5,425.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Data Conversion"
+          TopLeft="68.5,119.5" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="82,207" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="146.5,161.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5,45.5"
+              Start="0,0"
+              End="-15.5,38">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.75"
+                    Point2="0,22.75"
+                    Point3="-4,22.75" />
+                  <mssgle:LineSegment
+                    End="-11.5,22.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5,22.75"
+                    Point2="-15.5,22.75"
+                    Point3="-15.5,26.75" />
+                  <mssgle:LineSegment
+                    End="-15.5,38" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="132.5,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output 0]"
+          TopLeft="279.5,85.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-55,55.3333333333333"
+              Start="0,0"
+              End="-47.5,55.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-19.2110091743119,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.2110091743119,0"
+                    Point2="-23.2110091743119,0"
+                    Point3="-23.2110091743119,4" />
+                  <mssgle:LineSegment
+                    End="-23.2110091743119,51.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-23.2110091743119,51.3333333333333"
+                    Point2="-23.2110091743119,55.3333333333333"
+                    Point3="-27.2110091743119,55.3333333333333" />
+                  <mssgle:LineSegment
+                    End="-47.5,55.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output]"
+          TopLeft="153,350">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="365,57.5"
+              Start="0,0"
+              End="365,50">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.4466019417476" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.4466019417476"
+                    Point2="0,23.4466019417476"
+                    Point3="4,23.4466019417476" />
+                  <mssgle:LineSegment
+                    End="361,23.4466019417476" />
+                  <mssgle:CubicBezierSegment
+                    Point1="361,23.4466019417476"
+                    Point2="365,23.4466019417476"
+                    Point3="365,27.4466019417476" />
+                  <mssgle:LineSegment
+                    End="365,50" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="126.69361328125,28.4466019417476,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          TopLeft="112.25,350">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.5"
+              Start="0,0"
+              End="0,68">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,68" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,28.1953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="138.5,26.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141,47.3333333333333"
+              Start="0,0"
+              End="133.5,47.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="77.4954128440367,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.4954128440367,0"
+                    Point2="81.4954128440367,0"
+                    Point3="81.4954128440367,4" />
+                  <mssgle:LineSegment
+                    End="81.4954128440367,43.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.4954128440367,43.3333333333333"
+                    Point2="81.4954128440367,47.3333333333333"
+                    Point3="85.4954128440367,47.3333333333333" />
+                  <mssgle:LineSegment
+                    End="133.5,47.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup 1">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTeam]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
